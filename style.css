@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isabella's Web Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="fanta.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" 
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+}
+
+header, main, footer {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20rem;
+
+}
+
+header {
+    display: flex;
+    align-items: center
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+nav i {
+    font-size: 1.3rem;
+}
+
+
+main,section {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    gap: 5rem;
+}
+
+section {
+    gap: 1rem;
+}
+
+.intro-header p {
+    padding-top: 0.25rem;
+    
+}
+
+.intro-description {
+    max-width: 500px;
+}
+
+.links-container {
+    display: flex;
+    align-item: center;
+    gap: 1rem;
+    padding: 1 rem0;
+}
+
+.link-arrow {
+    color: var(--color-link);
+    transform: rotate(-45deg)
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-grid {
+    display: -ms-flexbox;
+    grid-template-columns: column;;
+    gap: 1rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.link-arrow {
+
+    color: var(--color-link);
+    transform: rotate(-45deg);
+}
+
+.color-div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cards-grid {
+    display: grid;
+    flex-direction; column;
+    gap: 2rem;
+}
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+}
+
+.tech-list {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0.25rem;  /* Added padding for better spacing */
+}
+
+.tech-list div {
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--border-radius-small);
+}
+
+@media (min-width: 640px) {
+    .project-card 
+        flex-direction: row;
+    
+}
+
+
+     .project-card .img-div {
+        min-width: 30%;
+        max-width: 400px;
+        height: auto;
+     }
